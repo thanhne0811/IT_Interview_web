@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">InterviewAI</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="browse.html">Practice</a>
+            <a href="cv-ai.html">CV Analysis</a>
+            <a href="history.html" class="active-link">History</a>
+            <a href="progress.html">Progress</a>
+            <a href="feedback.html">FeedBack</a>
+
+            <div class="auth-area">
+                <a href="login.html" id="loginBtn">Login</a>
+                <a href="register.html" id="signupBtn">Sign Up</a>
+
+                <div id="userMenu" style="display:none;">
+                    <span id="usernameDisplay"></span>
+                    <button onclick="logout()">Logout</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Practice Content -->
+    <section class="practice-section">
+
+        <div class="practice-wrapper">
+
+            <!-- Question Header -->
+            <div class="question-header">
+                <div class="badges">
+                    <span id="fieldBadge" class="badge field-badge"></span>
+                    <span id="difficultyBadge" class="badge difficulty-badge"></span>
+                </div>
+
+                <h2 id="questionTitle"></h2>
+            </div>
+
+            <!-- Progress -->
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+
+            <!-- Answer Area -->
+            <div class="answer-card">
+                <textarea id="answerBox" placeholder="Type your answer here..."></textarea>
+
+                <div class="action-buttons">
+                    <button onclick="submitAnswer()" class="btn-primary">
+                        Submit Answer
+                    </button>
+                    <button onclick="goBack()" class="btn-outline">
+                        Back to Browse
+                    </button>
+                </div>
+            </div>
+
+            <!-- Feedback -->
+            <div id="feedbackCard" class="feedback-card hidden">
+                <h3>Feedback</h3>
+                <div id="result"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="/js/practice.js"></script>
+    <script src="/js/auth.js"></script>
+    <script>
+        checkLoginUI();
+    </script>
+
+</body>
+
+</html>

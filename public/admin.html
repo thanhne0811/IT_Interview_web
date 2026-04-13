@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body class="admin-page">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h2>Admin</h2>
+        <a href="#" id="tabOverview" onclick="showTab('overview')">Overview</a>
+        <a href="#" id="tabQuestions" onclick="showTab('questions')">Questions</a>
+        <a href="#" id="tabFeedback" onclick="showTab('feedback')">Feedback</a>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main">
+
+        <div class="header">
+            <h1>Dashboard</h1>
+            <button onclick="logout()" class="btn-outline">Logout</button>
+        </div>
+
+        <!-- OVERVIEW -->
+        <div id="overviewTab" style="display:none;">
+            <h2>System Overview</h2>
+
+            <div class="dashboard-grid">
+                <div class="card">
+                    <h3 id="totalUsers">0</h3>
+                    <p>Users</p>
+                </div>
+                <div class="card">
+                    <h3 id="totalQuestions">0</h3>
+                    <p>Questions</p>
+                </div>
+                <div class="card">
+                    <h3 id="totalAnswers">0</h3>
+                    <p>Answers</p>
+                </div>
+                <div class="card">
+                    <h3 id="totalFeedback">0</h3>
+                    <p>Feedback</p>
+                </div>
+                <div class="card">
+                    <h3 id="pendingFeedback">0</h3>
+                    <p>Pending</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- QUESTIONS -->
+        <div id="questionsTab" style="display:none;">
+            <div class="card">
+                <h3>Add Question</h3>
+                <div class="form">
+                    <input id="content" placeholder="Question..." />
+                    <input id="field" placeholder="Field..." />
+                    <input id="difficulty" placeholder="Difficulty..." />
+                    <button class="btn" onclick="addQ()">Add Question</button>
+                </div>
+            </div>
+
+            <div id="list" class="grid"></div>
+        </div>
+
+        <!-- FEEDBACK -->
+        <div id="feedbackTab" style="display:none;">
+            <div id="feedbackList" class="grid"></div>
+        </div>
+
+    </div>
+
+    <script src="/js/auth.js"></script>
+    <script src="/js/admin.js" defer></script>
+
+</body>
+
+</html>

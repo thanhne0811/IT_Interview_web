@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Progress</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+<body>
+
+<nav class="navbar">
+        <div class="logo">InterviewAI</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="browse.html">Practice</a>
+            <a href="cv-ai.html">CV Analysis</a>
+            <a href="history.html" class="active-link">History</a>
+            <a href="progress.html">Progress</a>
+            <a href="feedback.html">FeedBack</a>
+
+            <div class="auth-area">
+                <a href="login.html" id="loginBtn">Login</a>
+                <a href="register.html" id="signupBtn">Sign Up</a>
+
+                <div id="userMenu" style="display:none;">
+                    <span id="usernameDisplay"></span>
+                    <button onclick="logout()">Logout</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<div class="dashboard">
+
+    <h1>Your Progress</h1>
+
+    <div class="stats">
+        <div class="stat-card">
+            <h2 id="avgScore">0</h2>
+            <p>Average Score</p>
+        </div>
+
+        <div class="stat-card">
+            <h2 id="totalAnswers">0</h2>
+            <p>Total Answers</p>
+        </div>
+
+        <div class="stat-card">
+            <h2 id="latestScore">0</h2>
+            <p>Latest Score</p>
+        </div>
+    </div>
+
+    <div class="chart-box">
+        <canvas id="progressChart"></canvas>
+    </div>
+
+    <div class="btn-group">
+        <button class="btn-primary" onclick="window.location.href='browse.html'">
+            Practice More
+        </button>
+
+        <button class="btn-primary" onclick="window.location.href='history.html'">
+            View History
+        </button>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/js/progress.js"></script>
+<script src="/js/auth.js"></script>
+<script>
+    checkLoginUI();
+</script>
+
+</body>
+</html>
