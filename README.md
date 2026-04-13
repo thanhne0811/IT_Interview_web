@@ -24,14 +24,6 @@ An AI-powered web application that simulates technical interviews and provides a
 **AI Integration:**
 - LLM API (for answer evaluation & question generation)
 
-📂 Project Structure
-config/ # Database & system configuration
-database/ # Database scripts
-middleware/ # Authentication & middlewares
-routes/ # API routes
-public/ # Frontend files
-server.js # Main server entry point
-
 ⚙️ Installation & Setup
 
 1. Clone repository
@@ -54,5 +46,4 @@ API_KEY=your_llm_api_key
 
 4. Run project
 npm start
-📸 Demo
-<img width="1920" height="928" alt="image" src="https://github.com/user-attachments/assets/5b93ca66-b314-46af-b182-2dda6faff2b7" />
+
