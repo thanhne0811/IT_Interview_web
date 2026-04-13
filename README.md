@@ -22,8 +22,8 @@ An AI-powered web application that simulates technical interviews and provides a
 - MySQL
 
 **AI Integration:**
-- LLM API (for answer evaluation & question generation)
-
+- LLM API
+  
 ⚙️ Installation & Setup
 
 1. Clone repository
