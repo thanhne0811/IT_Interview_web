@@ -1,8 +1,8 @@
-🚀 InterviewAI – AI Interview System
+## 🚀 InterviewAI – AI Interview System
 
 An AI-powered web application that simulates technical interviews and provides automated feedback using LLM APIs.
 
-📌 Features
+## 📌 Features
 
 - 🧠 AI-generated interview questions
 - 💬 Real-time answer evaluation using LLM API
@@ -10,7 +10,7 @@ An AI-powered web application that simulates technical interviews and provides a
 - 👤 User authentication & session management
 - 🛠 Admin dashboard for managing questions and feedback
 
-🛠 Tech Stack
+## 🛠 Tech Stack
 
 **Frontend:**
 - HTML, CSS, JavaScript (ReactJS)
@@ -24,19 +24,22 @@ An AI-powered web application that simulates technical interviews and provides a
 **AI Integration:**
 - LLM API
   
-⚙️ Installation & Setup
+## ⚙️ Installation & Setup
 
-1. Clone repository
+### 1. Clone repository
 ```bash
 git clone https://github.com/thanhne0811/IT_Interview_web.git
 cd IT_Interview_web
 
-2. Install dependencies
+```
+
+### 2. Install dependencies
 npm install
 
-3. Setup environment variables
 
+### 3. Setup environment variables
 Create .env file:
+```bash
 PORT=5000
 DB_HOST=localhost
 DB_USER=root
@@ -44,6 +47,8 @@ DB_PASSWORD=your_password
 DB_NAME=your_db
 API_KEY=your_llm_api_key
 
-4. Run project
-npm start
+```
+
+### 4. Run project
+node server.js
 
