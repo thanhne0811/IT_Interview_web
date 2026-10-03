@@ -13,7 +13,7 @@ An AI-powered web application that simulates technical interviews and provides a
 ## 🛠 Tech Stack
 
 **Frontend:**
-- HTML, CSS, JavaScript (ReactJS)
+- HTML, CSS, JavaScript
 
 **Backend:**
 - NodeJS, ExpressJS
